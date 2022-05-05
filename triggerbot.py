@@ -25,18 +25,7 @@ while True:
         
         # loop through each detection
         for i in range(len(df.index)):
-
             if df.iloc[i]['xmin'] <= 100 and df.iloc[i]['xmax'] >= 100 and df.iloc[i]['ymin'] <= 100 and df.iloc[i]['ymax'] >= 100:
                 pyautogui.click()
-                #pyautogui.mouseDown()
-                #pyautogui.mouseUp()
                 print("BANG!\n")
-
                 #playsound('hitsound.wav')
-
-            
-
-    
-
-
-
