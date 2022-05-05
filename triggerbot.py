@@ -6,18 +6,6 @@ from playsound import playsound
 
 from torch._C import TensorType
 
-# Print all hwnds
-
-#def winEnumHandler( hwnd, ctx ):
-#   if win32gui.IsWindowVisible( hwnd ):
-#       print (hex(hwnd), win32gui.GetWindowText( hwnd ))
-
-#win32gui.EnumWindows( winEnumHandler, None )
-
-#hwnd = win32gui.FindWindow(None, "Spotify Premium")
-#rect = win32gui.GetWindowRect(hwnd)
-#region = rect[0], rect[1], rect[2] - rect[0], rect[3] - rect[1]
-
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s6')
 model.classes = [0]
 
